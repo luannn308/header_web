@@ -131,9 +131,11 @@ header {
     display: inline-block;
 }
 .icon a {
-    color: #000000;
     border-bottom: rgb(255, 255, 255) 2px solid;
     transition: border-bottom-color 0.5s ease;
+}
+.icon span {
+    color: #000000;
 }
 main {
     height: 3000px;
