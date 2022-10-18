@@ -1,0 +1,146 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    height: 76px;
+    left: 0px;
+    top: 0px;
+    background: #ffffff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.12);
+    z-index: 1;
+}
+.search-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 12px;
+    font-weight: 400;
+}
+.search-btn span {
+    width: 18px;
+}
+.search-btn input {
+    outline: none;
+    width: 120px;
+    border-bottom: 1px rgb(255, 255, 255) solid;
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    padding: 6px 0px 2px 6px;
+    margin-right: 25px;
+}
+.search-btn input:focus,
+.search-btn input:hover {
+    border-bottom: 1px #000000 solid;
+    transition: border-color 0.4s ease;
+}
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    font-weight: 500;
+}
+.nav li {
+    display: inline-block;
+    position: relative;
+}
+.nav a {
+    text-decoration: none;
+    color: black;
+    border-bottom: rgb(255, 255, 255) 2px solid;
+    transition: border-bottom-color 0.5s ease;
+}
+.nav a:hover,
+.icon a:hover {
+    border-bottom: black 2px solid;
+}
+.nav a:focus,
+.icon a:hover {
+    color: rgb(169, 169, 169);
+}
+.nav img {
+    width: 177px;
+    height: 42.09px;
+}
+.more {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.more span {
+    width: 9px;
+    cursor: pointer;
+}
+.nav-child {
+    display: none;
+    position: absolute;
+    top: 99%;
+    background-color: rgb(173, 173, 173);
+}
+.nav-child li {
+    padding: 0;
+    margin: 0;
+}
+.nav-child li a {
+    display: block;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 12px;
+    padding-right: 50px;
+    border: none !important;
+}
+.nav-child li:hover {
+    background-color: rgb(90, 90, 90);
+}
+.nav-child li:hover a {
+    color: #ffffff;
+}
+.nav-child li a {
+    color: #ffffff;
+}
+.nav li:hover .nav-child {
+    display: flex;
+    flex-direction: column;
+    float: left;
+}
+.icon ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 26px;
+    margin-left: 125px;
+}
+.icon li {
+    color: #000000;
+    display: inline-block;
+}
+.icon a {
+    border-bottom: rgb(255, 255, 255) 2px solid;
+    transition: border-bottom-color 0.5s ease;
+}
+main {
+    height: 3000px;
+    color: black;
+    position: relative;
+    top: 76px;
+    text-align: center;
+}
+main h1 {
+    padding: 16px;
+}
